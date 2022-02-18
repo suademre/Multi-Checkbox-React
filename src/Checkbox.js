@@ -15,6 +15,13 @@ const Checkbox = ({ items, selectedItem, setSelectedItem }) => {
       ? setSelectedItem(selectedItem.filter((x) => x !== value))
       : setSelectedItem([...selectedItem, value]);
   };
+
+  /* if (selectedItem.some((x) => x === value)) {
+    setSelectedItem(selectedItem.filter((x) => x !== value));
+  } else {
+    setSelectedItem([...selectedItem, value]);
+  } */
+
   return (
     <div className="App">
       <h3>Tekli Checkbox</h3>
